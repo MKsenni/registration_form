@@ -1,0 +1,392 @@
+@charset "UTF-8";
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  height: 100vh;
+  background-color: #1B2473;
+}
+
+.container .enter {
+  display: none;
+  text-align: center;
+  margin-top: 80px;
+  padding: 26px 46px;
+  width: 600px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+}
+
+.container .enter .title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  color: #787878;
+}
+
+.container .enter .enter-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .enter .enter-inputs__email {
+  position: relative;
+  margin-top: 36px;
+}
+
+.container .enter .enter-inputs__email_label {
+  position: absolute;
+  top: -20px;
+  left: 7px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #787878;
+}
+
+.container .enter .enter-inputs__email_input {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  padding-top: 7px;
+  padding-left: 15px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  color: #787878;
+  border: 2px solid #787878;
+  border-radius: 10px;
+}
+
+.container .enter .enter-inputs__email .email-valid {
+  position: absolute;
+  left: 0;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  color: #CB2424;
+}
+
+.container .enter .enter-inputs__password {
+  position: relative;
+  margin-top: 36px;
+}
+
+.container .enter .enter-inputs__password_label {
+  position: absolute;
+  top: -20px;
+  left: 7px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #787878;
+}
+
+.container .enter .enter-inputs__password-input {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  padding-top: 7px;
+  padding-left: 15px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  color: #787878;
+  border: 2px solid #787878;
+  border-radius: 10px;
+}
+
+.container .enter .enter-inputs__password .password-valid {
+  position: absolute;
+  left: 0;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  color: #CB2424;
+}
+
+.container .enter .enter-inputs__label {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 28px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #787878;
+}
+
+.container .enter .enter-inputs__label_check {
+  margin-top: 16px;
+  margin-bottom: 52px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.container .enter .enter-inputs__label .element {
+  content: ' ';
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  border: 2px solid #787878;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.container .enter .enter-inputs__label .check-valid {
+  position: absolute;
+  top: 400px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  color: #CB2424;
+}
+
+.container .enter .enter-inputs__label input[type="checkbox"]:checked + .element::after {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/images/✓.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.container .enter__btn {
+  padding: 18px 55px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 16px;
+  color: #FFFFFF;
+  background: #1A226B;
+  border-radius: 10px;
+}
+
+.registr {
+  display: block;
+  text-align: center;
+  margin-top: 80px;
+  padding: 26px 46px;
+  width: 600px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+}
+
+.registr .title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  color: #787878;
+}
+
+.registr .registr-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.registr .registr-inputs__email {
+  position: relative;
+  margin-top: 36px;
+}
+
+.registr .registr-inputs__email_label {
+  position: absolute;
+  top: -20px;
+  left: 7px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #787878;
+}
+
+.registr .registr-inputs__email_input {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  padding-top: 7px;
+  padding-left: 15px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  color: #787878;
+  border: 2px solid #787878;
+  border-radius: 10px;
+}
+
+.registr .registr-inputs__email .star {
+  content: ' ';
+  position: absolute;
+  top: 10px;
+  left: -15px;
+  width: 12px;
+  height: 10px;
+}
+
+.registr .registr-inputs__email .email-empty {
+  display: none;
+  text-align: left;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  color: #CB2424;
+}
+
+.registr .registr-inputs__email .email-valid {
+  display: none;
+  text-align: left;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  color: #CB2424;
+}
+
+.registr .registr-inputs__password {
+  position: relative;
+  margin-top: 36px;
+}
+
+.registr .registr-inputs__password_label {
+  position: absolute;
+  top: -20px;
+  left: 7px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #787878;
+}
+
+.registr .registr-inputs__password-input {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  padding-top: 7px;
+  padding-left: 15px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  color: #787878;
+  border: 2px solid #787878;
+  border-radius: 10px;
+}
+
+.registr .registr-inputs__password .star {
+  content: '*';
+  position: absolute;
+  top: 10px;
+  left: -15px;
+  width: 12px;
+  height: 10px;
+  background-repeat: no-repeat;
+}
+
+.registr .registr-inputs__password .password-empty {
+  display: none;
+  text-align: left;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  color: #CB2424;
+}
+
+.registr .registr-inputs__password .password-length {
+  display: none;
+  text-align: left;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  color: #CB2424;
+}
+
+.registr .registr-inputs__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 28px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #787878;
+}
+
+.registr .registr-inputs__label_check {
+  margin-top: 16px;
+  margin-bottom: 52px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.registr .registr-inputs__label .element {
+  content: ' ';
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  border: 2px solid #787878;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.registr .registr-inputs__label .star {
+  content: '*';
+  position: absolute;
+  top: 25px;
+  left: -15px;
+  width: 12px;
+  height: 10px;
+  background-repeat: no-repeat;
+}
+
+.registr .registr-inputs__label a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #787878;
+  text-decoration: underline;
+}
+
+.registr .registr-inputs__label .check-valid {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  color: #CB2424;
+}
+
+.registr .registr-inputs__label input[type="checkbox"]:checked + .element::after {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/images/✓.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.registr__btn {
+  padding: 18px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 16px;
+  color: #FFFFFF;
+  background: #1A226B;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=style.css.map */
