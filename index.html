@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <form action="" class="enter">
+                <h1 class="title">Вход</h1>
+                <div class="enter-inputs">
+                    <div class="enter-inputs__email">
+                        <label for="" class="enter-inputs__email_label">Email</label>
+                        <label class="star"></label>
+                        <input type="text" class="enter-inputs__email_input" placeholder="Введите email">
+                        <span class="email-valid">Поле обязательно для заполнения</span>
+                    </div>
+
+                    <div class="enter-inputs__password">
+                        <label for="" class="enter-inputs__password_label">Пароль</label>
+                        <span class="star"></span>
+                        <input type="text" class="enter-inputs__password-input" placeholder="Введите пароль">
+                        <span class="password-valid">Поле обязательно для заполнения</span>
+                    </div>
+                    
+                    <label for="enter-check" class="enter-inputs__label">
+                        <span class="star"></span>
+                        <input type="checkbox" id="enter-check" class="enter-inputs__label_check">
+                        <span class="element"></span>Я согласен получать обновления на почту
+                        <span class="check-valid">Поле обязательно для заполнения</span>
+                    </label>
+                    
+                </div>
+                <button class="enter__btn">Войти</button>
+            </form>
+            <form action="" class="registr">
+                <h1 class="title">Регистрация</h1>
+                <div class="registr-inputs">
+                    <div class="registr-inputs__email">
+                        <label for="" class="registr-inputs__email_label">Email</label>
+                        <input type="text" class="registr-inputs__email_input" placeholder="Введите email">
+                        <span class="star" id="starEmail">*</span>
+                        <span class="email-empty">Поле обязательно для заполнения</span>
+                        <span class="email-valid" id="valid-registr">Email невалидный</span>
+                    </div>
+
+                    <div class="registr-inputs__password">
+                        <label for="" class="registr-inputs__password_label">Пароль</label>
+                        <input type="text" class="registr-inputs__password-input" placeholder="Введите пароль">
+                        <span class="star" id="starPassword">*</span>
+                        <span class="password-empty">Поле обязательно для заполнения</span>
+                        <span class="password-length">Пароль должен содержать как минимум 8 символов</span>
+                    </div>
+                    
+                    <label for="registr-check" class="registr-inputs__label">
+                        <input type="checkbox" id="registr-check" class="registr-inputs__label_check">
+                        <span class="element" id="box-registr"></span>
+                        <span class="star" id="starCheck">*</span>
+                        <p>Я согласен с <a href=""> Правилами пользования приложением</a></p>
+                        <span class="check-valid" id="checkRegistr-error">Поле обязательно для заполнения</span>
+                    </label>
+                </div>
+                <button class="registr__btn">Регистрация</button>
+            </form> 
+        </div>
+
+        <script src="./scripts/script.js"></script>
+
+    </body>
+</html>
