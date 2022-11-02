@@ -2,9 +2,12 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Welcome!</title>
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/style.css">
     </head>
@@ -12,33 +15,38 @@
     <body>
         <div class="container">
             <form action="" class="enter">
+                <a class="registration" href="">Зарегестрироваться</a>
                 <h1 class="title">Вход</h1>
                 <div class="enter-inputs">
                     <div class="enter-inputs__email">
                         <label for="" class="enter-inputs__email_label">Email</label>
-                        <label class="star"></label>
                         <input type="text" class="enter-inputs__email_input" placeholder="Введите email">
-                        <span class="email-valid">Поле обязательно для заполнения</span>
+                        <span class="star" id="starEmailEnter">*</span>
+                        <span class="email-valid" id="valid-enter">Поле обязательно для заполнения</span>
                     </div>
 
                     <div class="enter-inputs__password">
                         <label for="" class="enter-inputs__password_label">Пароль</label>
-                        <span class="star"></span>
                         <input type="text" class="enter-inputs__password-input" placeholder="Введите пароль">
+                        <span class="star" id="starPasswordEnter">*</span>
                         <span class="password-valid">Поле обязательно для заполнения</span>
+                        <span class="emailOrPassword-valid">Логин или Пароль неверный</span>
                     </div>
                     
                     <label for="enter-check" class="enter-inputs__label">
-                        <span class="star"></span>
                         <input type="checkbox" id="enter-check" class="enter-inputs__label_check">
-                        <span class="element"></span>Я согласен получать обновления на почту
-                        <span class="check-valid">Поле обязательно для заполнения</span>
+                        <span class="element" id="box-enter"></span>
+                        <span class="star" id="starCheckEnter">*</span>
+                        <p>Я согласен получать обновления на почту</p>
+                        <span class="check-valid" id="checkEnter-error">Поле обязательно для заполнения</span>
                     </label>
                     
                 </div>
                 <button class="enter__btn">Войти</button>
             </form>
+
             <form action="" class="registr">
+                <a class="auth" href="">Авторизоваться</a>
                 <h1 class="title">Регистрация</h1>
                 <div class="registr-inputs">
                     <div class="registr-inputs__email">
@@ -61,7 +69,7 @@
                         <input type="checkbox" id="registr-check" class="registr-inputs__label_check">
                         <span class="element" id="box-registr"></span>
                         <span class="star" id="starCheck">*</span>
-                        <p>Я согласен с <a href=""> Правилами пользования приложением</a></p>
+                        <p>Я согласен с <a href="target"> Правилами пользования приложением</a></p>
                         <span class="check-valid" id="checkRegistr-error">Поле обязательно для заполнения</span>
                     </label>
                 </div>
@@ -69,7 +77,8 @@
             </form> 
         </div>
 
-        <script src="./scripts/script.js"></script>
+        <script src="./scripts/registration.js"></script>
+        <script src="./scripts/enter.js"></script>
 
     </body>
 </html>
