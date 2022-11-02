@@ -5,16 +5,28 @@
   align-items: baseline;
   height: 100vh;
   background-color: #1B2473;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container .enter {
-  display: none;
+  position: relative;
+  display: block;
   text-align: center;
   margin-top: 80px;
   padding: 26px 46px;
   width: 600px;
   border-radius: 20px;
   background-color: #FFFFFF;
+}
+
+.container .enter .registration {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1A226B;
 }
 
 .container .enter .title {
@@ -46,8 +58,8 @@
 }
 
 .container .enter .enter-inputs__email_input {
-  display: inline-block;
   position: relative;
+  display: inline-block;
   width: 100%;
   height: 50px;
   padding-top: 7px;
@@ -60,7 +72,17 @@
   border-radius: 10px;
 }
 
+.container .enter .enter-inputs__email .star {
+  content: ' ';
+  position: absolute;
+  top: 10px;
+  left: -15px;
+  width: 12px;
+  height: 10px;
+}
+
 .container .enter .enter-inputs__email .email-valid {
+  display: none;
   position: absolute;
   left: 0;
   font-weight: 500;
@@ -85,8 +107,8 @@
 }
 
 .container .enter .enter-inputs__password-input {
-  display: inline-block;
   position: relative;
+  display: inline-block;
   width: 100%;
   height: 50px;
   padding-top: 7px;
@@ -99,7 +121,28 @@
   border-radius: 10px;
 }
 
+.container .enter .enter-inputs__password .star {
+  content: ' ';
+  position: absolute;
+  top: 10px;
+  left: -15px;
+  width: 12px;
+  height: 10px;
+  background-repeat: no-repeat;
+}
+
 .container .enter .enter-inputs__password .password-valid {
+  display: none;
+  position: absolute;
+  left: 0;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  color: #CB2424;
+}
+
+.container .enter .enter-inputs__password .emailOrPassword-valid {
+  display: none;
   position: absolute;
   left: 0;
   font-weight: 500;
@@ -109,6 +152,7 @@
 }
 
 .container .enter .enter-inputs__label {
+  position: relative;
   display: flex;
   align-items: center;
   text-align: left;
@@ -140,9 +184,20 @@
   cursor: pointer;
 }
 
+.container .enter .enter-inputs__label .star {
+  content: ' ';
+  position: absolute;
+  top: 25px;
+  left: -15px;
+  width: 12px;
+  height: 10px;
+  background-repeat: no-repeat;
+}
+
 .container .enter .enter-inputs__label .check-valid {
   position: absolute;
-  top: 400px;
+  display: none;
+  bottom: 0;
   font-weight: 500;
   font-size: 10px;
   line-height: 16px;
@@ -155,7 +210,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(../images/✓.svg);
+  background: url(/images/✓.svg);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -172,13 +227,24 @@
 }
 
 .registr {
-  display: block;
+  position: relative;
+  display: none;
   text-align: center;
   margin-top: 80px;
   padding: 26px 46px;
   width: 600px;
   border-radius: 20px;
   background-color: #FFFFFF;
+}
+
+.registr .auth {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1A226B;
 }
 
 .registr .title {
@@ -210,6 +276,7 @@
 }
 
 .registr .registr-inputs__email_input {
+  position: relative;
   display: inline-block;
   width: 100%;
   height: 50px;
@@ -233,6 +300,7 @@
 }
 
 .registr .registr-inputs__email .email-empty {
+  position: absolute;
   display: none;
   text-align: left;
   font-weight: 500;
@@ -243,6 +311,7 @@
 
 .registr .registr-inputs__email .email-valid {
   display: none;
+  position: absolute;
   text-align: left;
   font-weight: 500;
   font-size: 10px;
@@ -266,6 +335,7 @@
 }
 
 .registr .registr-inputs__password-input {
+  position: relative;
   display: inline-block;
   width: 100%;
   height: 50px;
@@ -280,7 +350,7 @@
 }
 
 .registr .registr-inputs__password .star {
-  content: '*';
+  content: ' ';
   position: absolute;
   top: 10px;
   left: -15px;
@@ -290,6 +360,7 @@
 }
 
 .registr .registr-inputs__password .password-empty {
+  position: absolute;
   display: none;
   text-align: left;
   font-weight: 500;
@@ -299,6 +370,7 @@
 }
 
 .registr .registr-inputs__password .password-length {
+  position: absolute;
   display: none;
   text-align: left;
   font-weight: 500;
@@ -341,7 +413,7 @@
 }
 
 .registr .registr-inputs__label .star {
-  content: '*';
+  content: ' ';
   position: absolute;
   top: 25px;
   left: -15px;
@@ -359,8 +431,8 @@
 }
 
 .registr .registr-inputs__label .check-valid {
-  display: none;
   position: absolute;
+  display: none;
   bottom: 0;
   font-weight: 500;
   font-size: 10px;
@@ -374,7 +446,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(../images/✓.svg);
+  background: url(/images/✓.svg);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
